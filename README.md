@@ -1,3 +1,3 @@
 # SurvialBites
 
-Survial Bites 라는 서비스아닙니다.
+Survial Bites 라는 서비스아닙니다!!!
