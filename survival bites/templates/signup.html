@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block title %}회원가입 페이지{% endblock %} {%
+block content %}
+<div id="signup-area">
+  <form id="sign-up-form">
+    <label class="label login-label">회원가입</label>
+    <div id="name-input">
+      <input
+        class="input is-medium sing-up-area-input"
+        type="text"
+        placeholder="이름"
+      />
+    </div>
+    <div id="id-input">
+      <input
+        class="input is-medium sing-up-area-input"
+        type="text"
+        placeholder="ID"
+      />
+    </div>
+    <div id="pw-input">
+      <input
+        class="input is-medium sing-up-area-input"
+        type="text"
+        placeholder="PW"
+      />
+    </div>
+  </form>
+  <div>
+    <button class="primary-btn button is-primary">회원가입</button>
+  </div>
+</div>
+
+{% endblock %}

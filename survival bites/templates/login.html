@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}로그인 페이지{% endblock %} {% block
+content %}
+
+<div id="login-area">
+  <label class="label login-label">로그인</label>
+  <div id="id-input">
+    <input class="input is-medium primary-input" type="text" placeholder="ID" />
+  </div>
+  <div id="pw-input">
+    <input class="input is-medium primary-input" type="text" placeholder="PW" />
+  </div>
+</div>
+<div id="login-btn-area">
+  <button class="login-btn-style button is-primary">로그인</button>
+  <button
+    class="login-btn-style button is-light"
+    onclick="window.location.href = '/signup'"
+  >
+    회원가입
+  </button>
+</div>
+
+{% endblock %}
