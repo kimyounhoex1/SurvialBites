@@ -5,6 +5,7 @@ block content %}
     <label class="label login-label">회원가입</label>
     <div id="name-input">
       <input
+        id="signup_name_input"
         class="input is-medium sing-up-area-input"
         type="text"
         placeholder="이름"
@@ -12,6 +13,7 @@ block content %}
     </div>
     <div id="id-input">
       <input
+        id="signup_id_input"
         class="input is-medium sing-up-area-input"
         type="text"
         placeholder="아이디"
@@ -19,6 +21,7 @@ block content %}
     </div>
     <div id="pw-input">
       <input
+        id="signup_pw_input"
         class="input is-medium sing-up-area-input"
         type="text"
         placeholder="비밀번호"
@@ -33,7 +36,9 @@ block content %}
     </div>
   </form>
   <div>
-    <button class="primary-btn button is-primary">회원가입</button>
+    <button class="primary-btn button is-primary" onclick="signupAction()">
+      회원가입
+    </button>
   </div>
 </div>
 
