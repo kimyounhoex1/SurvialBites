@@ -23,24 +23,16 @@ function loginAction() {
     contentType: "application/json",
     data: JSON.stringify({ id: id, pw: pw }),
     success: function (response) {
-      sessionStorage.setItem("jwtToken", response["token"]);
-      console.log("토큰이 저장되었습니다.");
-      afterLogin()
+        if(response['result'] == 'failure'){
+          alert(response['message'])
+          // window.location.href="/loginpage?redirect=" + response["redirectUri"]
+        }
+        else
+          window.location.href="/mainpage";
+
+      // sessionStorage.setItem("jwtToken", response["token"]);
+      // console.log("토큰이 저장되었습니다.");
+
     },
   });
 }
-
-function afterLogin() {
-    const token = sessionStorage.getItem("jwtToken");
-    $.ajax({
-      type: "GET",
-      url: "/postingpage",
-      headers: {
-        "Authorization": "Bearer " + token
-      },
-      success: function(response) {
-        
-      },
-    });
-  }
-  
