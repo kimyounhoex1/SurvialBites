@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block title %}회원가입 페이지{% endblock %} {%
+block content %}
+<div id="signup-area">
+  <form id="sign-up-form">
+    <label class="label login-label">회원가입</label>
+    <div id="name-input">
+      <input
+        id="signup_name_input"
+        class="input is-medium sing-up-area-input"
+        type="text"
+        placeholder="이름"
+      />
+    </div>
+    <div id="id-input">
+      <input
+        id="signup_id_input"
+        class="input is-medium sing-up-area-input"
+        type="text"
+        placeholder="아이디"
+      />
+    </div>
+    <div id="pw-input">
+      <input
+        id="signup_pw_input"
+        class="input is-medium sing-up-area-input"
+        type="password"
+        placeholder="비밀번호"
+      />
+    </div>
+    <div id="pw-cf-input">
+      <input
+        id="signup-pw-cf-input"
+        class="input is-medium sing-up-area-input"
+        type="password"
+        placeholder="비밀번호 확인"
+      />
+    </div>
+  </form>
+  <div>
+    <button class="primary-btn button is-primary" onclick="signupAction()">
+      회원가입
+    </button>
+  </div>
+</div>
+
+{% endblock %}

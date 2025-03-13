@@ -1,0 +1,75 @@
+#make-card-area {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  margin: auto;
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+#make-card-area::-webkit-scrollbar {
+  display: none;
+}
+
+#make-card-area > * {
+  margin: 20px;
+}
+
+#option-area {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#kind-of-food {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#kind-of-food > * {
+  width: 48%;
+}
+
+#name-input {
+  width: 100%;
+}
+
+#radio-papa {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+#meeting {
+  margin-top: 10px;
+}
+
+#uploadForm {
+  width: 100%;
+}
+
+#uploadForm > div {
+  border: 0.025px solid #eee;
+  border-radius: 3px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#img-file {
+  width: 200%;
+  height: 200%;
+  cursor: pointer;
+}
+
+#add-img-text {
+  position: absolute;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.image-btn {
+  position: relative;
+}
